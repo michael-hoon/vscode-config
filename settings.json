@@ -1,0 +1,200 @@
+
+{
+    "python.defaultInterpreterPath": "C:\\Users\\micha\\miniconda3\\python.exe",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "cSpell.language": "en,en-GB",
+
+    // =========================================================================
+    // VSCode Config
+    // =========================================================================
+
+    // Disables the layout control icon at the top right
+    "workbench.layoutControl.enabled": false, 
+    // Enables an infinite amount of editors and disables
+    // the useless "Open Editors" panel in the explorer.
+    "explorer.openEditors.visible": 0,
+    "explorer.autoReveal": false,
+    // Sets the sidebar location to the right
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 12,
+    "workbench.tree.renderIndentGuides": "none",
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnPaste": true,
+    "editor.guides.bracketPairs": true,
+    // Disables the useless minimap to the right of our code 
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.rulers": [80],
+    "editor.tabSize": 4,
+    "editor.tabCompletion": "on",
+    "editor.wordWrap": "on",
+    // Add some padding to the top and bottom of our file
+    "editor.padding.bottom": 14,
+    "editor.padding.top": 14,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "visible",
+    "editor.overviewRulerBorder": false,
+    "editor.lightbulb.enabled": "off",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "editor.matchBrackets": "never",
+
+    "workbench.editor.tabActionCloseVisibility": false,
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        "editor.background": "#140E1A",
+        "editorSuggestWidget.selectedBackground": "#231739",
+        "sideBar.background": "#140E1A",
+        "list.activeSelectionBackground": "#231739",
+        "list.inactiveSelectionBackground": "#231739",
+        "list.hoverBackground": "#231739",
+        "list.focusBackground": "#231739",
+    },
+
+    // =========================================================================
+    // APC UI Config
+    // =========================================================================
+
+    "apc.font.family": "'Jetbrains Mono'",
+    "apc.monospace.font.family": "'Jetbrains Mono'",
+    "apc.electron": {
+        // "opacity": 0.90,
+        "frame": true,
+        "titleBarStyle": "hidden",
+    },
+    "apc.menubar.compact": true,
+    "window.titleBarStyle": "custom",
+
+    "apc.parts.font.family": {
+    // "sidebar": "'Jetbrains Mono'",
+    // "titlebar": "'Jetbrains Mono'",
+    // "activityBar": "'Jetbrains Mono'",
+    // "panel": "'Jetbrains Mono'",
+    // "tabs": "'Jetbrains Mono'",
+    // "statusbar": "'Jetbrains Mono'",
+    "extension-editor": "'Jetbrains Mono'" // Install the font and restart vscode
+},
+    
+
+    // =========================================================================
+    // Theme Config (Indent Rainbow)
+    // =========================================================================
+
+    // Using the light mode
+    // "indentRainbow.indicatorStyle": "light",
+    // we use a simple 1 pixel wide line
+    // "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    // the same colors as above but more visible
+    // "indentRainbow.colors": [
+    //    "rgba(255,255,64,0.3)",
+    //     "rgba(127,255,127,0.3)",
+    //     "rgba(255,127,255,0.3)",
+    //     "rgba(79,236,236,0.3)"
+    // ],
+
+    // =========================================================================
+    // Git Config
+    // =========================================================================
+
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+
+    // =========================================================================
+    // LaTeX Config
+    // =========================================================================
+
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "latex-workshop.linting.run": "onType",
+    "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+    "telemetry.telemetryLevel": "off",
+
+    "conceal.revealOn": "active-line",
+    "conceal.adjustCursorMovement": false,
+    // =========================================================================
+    // File Exclude Config
+    // =========================================================================
+
+    "files.exclude": {
+		"**/.git": true,
+		"**/*.aux": true,
+		"**/*.bbl": true,
+		"**/*.bcf": true,
+		"**/*.blg": true,
+		"**/*.fdb_latexmk": true,
+		"**/*.fls": true,
+		"**/*.glg": true,
+		"**/*.glo": true,
+		"**/*.gls": true,
+		"**/*.glsdefs": true,
+		"**/*.idx": true,
+		"**/*.ilg": true,
+		"**/*.ind": true,
+		"**/*.lof": true,
+		"**/*.log": true,
+		"**/*.lot": true,
+		"**/*.mw": true,
+		"**/*.nlo": true,
+		"**/*.nls": true,
+		"**/*.out": true,
+		"**/*.run.xml": true,
+		"**/*.synctex.gz": true,
+		"**/*.thm": true,
+		"**/*.toc": true,
+		"**/*.xdy": true
+    },
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+
+    // =========================================================================
+    // Copilot Config
+    // =========================================================================
+
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "latex": false,
+        "hsnips": false,
+        "tex": false
+    },
+
+    "git.confirmSync": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.commandsToSkipShell": [
+        "github.copilot.terminal.suggestCommand",
+        "language-julia.interrupt"
+    ],
+
+    // =========================================================================
+    // Julia Config
+    // =========================================================================
+
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+
+
+    // =========================================================================
+    // VIM Config
+    // =========================================================================
+    "vim.smartRelativeLine": true,
+    "editor.cursorSurroundingLines": 8,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.useSystemClipboard": true,
+    "editor.cursorBlinking": "solid",
+    "workbench.colorTheme": "Aura Dracula Spirit",
+    "window.zoomLevel": -1,
+}
+
